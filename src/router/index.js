@@ -5,6 +5,9 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('@/pages/null_Home.vue'),
+    children: [
+
+    ]
   },
   {
     path: '/es',
@@ -22,6 +25,11 @@ const routes = [
       locale: 'en'
     }
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: () => import('@/pages/404View.vue')
+  }
 ]
 
 const router = createRouter({

@@ -29,10 +29,6 @@ export default {
     document.getElementsByTagName("html")[0].setAttribute("lang", "es");
     document.getElementById("btn-lang").innerHTML = "🇧🇴";
     document.getElementById("btn-lang").setAttribute("data-text", "🇧🇴");
-    // document
-    //   .getElementById("a-lang")
-    //   .setAttribute("onclick", "redirectTo('/es')");
-    document.getElementById("btn-lang").classList.add("disabled");
     document.getElementById("btn-contact").innerHTML = "CONTACTAME";
     document
       .getElementById("btn-contact")

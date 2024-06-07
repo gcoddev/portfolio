@@ -3,7 +3,7 @@
 var $body = $("body");
 
 $(window).on("load", function () {
-  $body.addClass("loaded");
+  // $body.addClass("loaded");
 });
 
 if ($body.attr("data-preloader") === "true") {

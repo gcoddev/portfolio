@@ -62,6 +62,18 @@
               </li>
               <li>
                 <a
+                  class="button-circle button-circle-sm"
+                  href="https://gitlab.com/gcoddev"
+                  target="_blank"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-gitlab"></i>
+                  <i class="bi bi-gitlab"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   class="button-circle button-circle-sm expand"
                   href="https://www.linkedin.com/in/gcoddev"
                   target="_blank"
@@ -70,17 +82,6 @@
                 >
                   <i class="bi bi-linkedin"></i>
                   <i class="bi bi-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="mailto:gary7apaza@gcod.dev?subject=Mensaje"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
-                  <i class="bi bi-envelope-fill"></i>
-                  <i class="bi bi-envelope-fill"></i>
                 </a>
               </li>
             </ul>
@@ -104,6 +105,17 @@
           <div class="col-12 col-md-4 col-lg-12">
             <h6 class="sm-heading">Social Hub</h6>
             <ul class="list-inline">
+              <li>
+                <a
+                  class="button-circle button-circle-sm"
+                  href="mailto:gary7apaza@gcod.dev?subject=Mensaje"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-envelope-fill"></i>
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </li>
               <li>
                 <a
                   class="button-circle button-circle-sm"
@@ -214,19 +226,27 @@ export default {
           this.index
         );
         this.index++;
-        setTimeout(this.typing, 150);
+        setTimeout(this.typing, 100);
       } else {
         document.getElementById("cursor-type").style.display = "none";
         document
           .getElementById("a-lang")
           .setAttribute("onclick", "redirectTo('/es')");
+        document
+          .getElementById("a-index")
+          .setAttribute("onclick", "redirectTo('/')");
       }
     },
+  },
+  created() {
+    document.getElementsByTagName("body")[0].classList.remove("loaded");
+    document.getElementById("a-index").removeAttribute("onclick");
   },
   mounted() {
     document.getElementById("name-typing").innerHTML = "";
     this.index = 0;
     this.typing();
+    document.getElementsByTagName("body")[0].classList.add("loaded");
   },
 };
 </script>

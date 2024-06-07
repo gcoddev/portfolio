@@ -27,16 +27,10 @@ export default {
   },
   created() {
     document.getElementsByTagName("html")[0].setAttribute("lang", "en");
-    document.getElementById("btn-lang").innerHTML = "🇧🇺🇺🇸";
+    document.getElementById("btn-lang").innerHTML = "🇺🇸";
     document.getElementById("btn-lang").setAttribute("data-text", "🇺🇸");
-    // document
-    //   .getElementById("a-lang")
-    //   .setAttribute("onclick", "redirectTo('/es')");
-    document.getElementById("btn-lang").classList.add("disabled");
-    document.getElementById("btn-contact").innerHTML = "CONTACT ME";
-    document
-      .getElementById("btn-contact")
-      .setAttribute("data-text", "CONTACT ME");
+    document.getElementById("btn-contact").innerHTML = "CONTACT";
+    document.getElementById("btn-contact").setAttribute("data-text", "CONTACT");
     document.getElementById("btn-menu").innerHTML = "MENU";
     document.getElementById("btn-menu").setAttribute("data-text", "MENU");
 
@@ -44,7 +38,7 @@ export default {
     document.getElementById("a-services").innerHTML = "Services";
     document.getElementById("a-portfolio").innerHTML = "Portfolio";
     document.getElementById("a-awards").innerHTML = "Awards";
-    document.getElementById("a-testimonial").innerHTML = "Expercience"
+    document.getElementById("a-testimonial").innerHTML = "Expercience";
     // document.getElementById("a-blog").innerHTML = "Blog";
     document.getElementById("a-contact").innerHTML = "Contact";
     document.getElementById("copyright").innerHTML = "All Rights Reserved";

@@ -1,0 +1,201 @@
+[
+    {
+        "name": "Vue.js",
+        "img": "assets/banner/bvue.png",
+        "tags": [
+            "javascript",
+            "nodejs",
+            "node",
+            "vuejs",
+            "vue",
+            "js"
+        ]
+    },
+    {
+        "name": "Node.js",
+        "img": "assets/banner/bnode.png",
+        "tags": [
+            "javascript",
+            "nodejs",
+            "node",
+            "js"
+        ]
+    },
+    {
+        "name": "React.js",
+        "img": "assets/banner/breact.png",
+        "tags": [
+            "javascript",
+            "nodejs",
+            "node",
+            "reactjs",
+            "react",
+            "js"
+        ]
+    },
+    {
+        "name": "Nest.js",
+        "img": "assets/banner/bnest.png",
+        "tags": [
+            "javascript",
+            "nestjs",
+            "nest",
+            "node",
+            "nodejs"
+        ]
+    },
+    {
+        "name": "Laravel",
+        "img": "assets/banner/blaravel.png",
+        "tags": [
+            "php",
+            "laravel"
+        ]
+    },
+    {
+        "name": "Flutter",
+        "img": "assets/banner/bflutter.png",
+        "tags": [
+            "dart",
+            "android",
+            "flutter"
+        ]
+    },
+    {
+        "name": "Django",
+        "img": "assets/banner/bdjango.png",
+        "tags": [
+            "django",
+            "python",
+            "pip"
+        ]
+    },
+    {
+        "name": "Flask",
+        "img": "assets/banner/bflask.png",
+        "tags": [
+            "flask",
+            "python",
+            "pip"
+        ]
+    },
+    {
+        "name": "Python",
+        "img": "assets/banner/bpython.png",
+        "tags": [
+            "python",
+            "pip"
+        ]
+    },
+    {
+        "name": "Git",
+        "img": "assets/banner/bgit.png",
+        "tags": [
+            "git",
+            "bash",
+            "gitbash"
+        ]
+    },
+    {
+        "name": "JavaScript",
+        "img": "assets/banner/bjs.png",
+        "tags": [
+            "javascript",
+            "js"
+        ]
+    },
+    {
+        "name": "CodeIgniter",
+        "img": "assets/banner/bcode.png",
+        "tags": [
+            "codeigniter",
+            "php"
+        ]
+    },
+    {
+        "name": "Bootstrap",
+        "img": "assets/banner/bbootstrap.png",
+        "tags": [
+            "bootstrap",
+            "css",
+            "html"
+        ]
+    },
+    {
+        "name": "Tailwind",
+        "img": "assets/banner/btailwind.png",
+        "tags": [
+            "tailwind",
+            "css",
+            "html"
+        ]
+    },
+    {
+        "name": "jQuery",
+        "img": "assets/banner/bjquery.png",
+        "tags": [
+            "jquery",
+            "javascript",
+            "js"
+        ]
+    },
+    {
+        "name": "Java",
+        "img": "assets/banner/bjava.png",
+        "tags": [
+            "java"
+        ]
+    },
+    {
+        "name": "PHP",
+        "img": "assets/banner/bphp.png",
+        "tags": [
+            "php"
+        ]
+    },
+    {
+        "name": "Bash",
+        "img": "assets/banner/bbash.png",
+        "tags": [
+            "bash",
+            "gitbash"
+        ]
+    },
+    {
+        "name": "GitHub",
+        "img": "assets/banner/bgithub.png",
+        "tags": [
+            "github",
+            "git",
+            "bash",
+            "gitbash"
+        ]
+    },
+    {
+        "name": "GitLab",
+        "img": "assets/banner/bgitlab.png",
+        "tags": [
+            "gitlab",
+            "git",
+            "bash",
+            "gitbash"
+        ]
+    },
+    {
+        "name": "MySQL",
+        "img": "assets/banner/bmysql.png",
+        "tags": [
+            "mysql",
+            "mariadb"
+        ]
+    },
+    {
+        "name": "NPM",
+        "img": "assets/banner/bnpm.png",
+        "tags": [
+            "npm",
+            "nodejs",
+            "nodejs"
+        ]
+    }
+]

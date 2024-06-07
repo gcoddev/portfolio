@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Administracion de Paginas Web",
+        "img": "assets/projects/padministracionpaginas.png",
+        "tags": [
+            "vuejs",
+            "nodejs"
+        ]
+    },
+    {
+        "name": "Servicio de titulados - API",
+        "img": "assets/projects/ptitulados.png",
+        "tags": [
+            "nodejs",
+            "jwt",
+            "mariadb"
+        ]
+    },
+    {
+        "name": "Planificacion Presupuestaria POA",
+        "img": "assets/projects/ppoa.png",
+        "tags": [
+            "laravel",
+            "mariadb"
+        ]
+    },
+    {
+        "name": "Portfolio web",
+        "img": "assets/projects/pportfolio.png",
+        "tags": [
+            "vuejs",
+            "nestjs"
+        ]
+    }
+]

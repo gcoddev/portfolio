@@ -69,6 +69,12 @@
 
   <div class="section pt-0">
     <div class="container">
+      <div class="col-12 col-xl-4">
+        <h2 class="display-6 fw-medium mb-0">
+          My know<span class="text-gradient">ledge</span>
+        </h2>
+      </div>
+      <br />
       <div class="swiper-navigation">
         <input
           type="search"
@@ -103,7 +109,7 @@
           :modules="modules"
           :navigation="{ prevEl: '.swiper-xp-prev', nextEl: '.swiper-xp-next' }"
           :pagination="{
-            el: '.custom-swiper-pagination',
+            el: '.xp-swiper-pagination',
             clickable: true,
           }"
         >
@@ -119,7 +125,7 @@
             </div>
           </swiper-slide>
         </Swiper>
-        <div class="custom-swiper-pagination swiper-pagination"></div>
+        <div class="xp-swiper-pagination swiper-pagination"></div>
       </div>
     </div>
   </div>

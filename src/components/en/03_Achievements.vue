@@ -77,7 +77,7 @@
 
   <div id="testimonial" class="section">
     <div class="container">
-      <h1 class="display-3 fw-medium mb-0">
+      <h1 class="display-5 fw-medium mb-0">
         Exper<span class="text-gradient">ience</span>
       </h1>
       <br />

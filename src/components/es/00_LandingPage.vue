@@ -217,7 +217,7 @@
 .cursor-type {
   display: inline-block;
   width: 2px;
-  height: 7rem;
+  height: 5em;
   background-color: white;
   animation: blink 1s step-end infinite;
   margin-left: 5px;

@@ -68,6 +68,12 @@
 
   <div class="section pt-0">
     <div class="container">
+      <div class="col-12 col-xl-4">
+        <h2 class="display-6 fw-medium mb-0">
+          Mis cono<span class="text-gradient">cimientos</span>
+        </h2>
+      </div>
+      <br>
       <div class="swiper-navigation">
         <input
           type="search"

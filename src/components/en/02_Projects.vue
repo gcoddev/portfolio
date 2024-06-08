@@ -31,15 +31,18 @@
         </div>
         <div class="swiper portfolio-slider mt-4 mt-lg-5">
           <Swiper
-            :modules="modules2"
+            :modules="modules"
             class="swiper-wrapper"
-            :slides-per-view="slidesPerView2"
-            :breakpoints="breakpoints2"
+            :slides-per-view="slidesPerView"
+            :breakpoints="breakpoints"
             :navigation="{
               prevEl: '.swiper-portfolio-prev',
               nextEl: '.swiper-portfolio-next',
             }"
-            :pagination="{ el: '.custom-swiper-pagination', clickable: true }"
+            :pagination="{
+              el: '.portfolio-swiper-pagination',
+              clickable: true,
+            }"
           >
             <swiper-slide
               class="swiper-slide"
@@ -70,6 +73,7 @@
               </div>
             </swiper-slide>
           </Swiper>
+          <div class="portfolio-swiper-pagination swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -92,26 +96,26 @@ export default {
   data() {
     return {
       projects: proys,
-      slidesPerView2: 2.5,
-      breakpoints2: {
+      slidesPerView: 2.5,
+      breakpoints: {
         320: {
-          slidesPerView2: 1,
+          slidesPerView: 1,
           spaceBetween: 5,
         },
         480: {
-          slidesPerView2: 1.5,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         640: {
-          slidesPerView2: 1.5,
+          slidesPerView: 1.5,
           spaceBetween: 15,
         },
         768: {
-          slidesPerView2: 2,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView2: 2.5,
+          slidesPerView: 2.5,
           spaceBetween: 25,
         },
       },
@@ -119,7 +123,7 @@ export default {
   },
   setup() {
     return {
-      modules2: [Navigation, Pagination],
+      modules: [Navigation, Pagination],
     };
   },
 };

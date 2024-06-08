@@ -11,7 +11,7 @@ export default {
     this.axios
       .get(
         "https://api.ipgeolocation.io/ipgeo?apiKey=" +
-          process.env.VUE_APP_API_KEY
+          process.env.VUE_APP_API_GEO_KEY
       )
       .then((response) => {
         const region = response.data.country_code2;

@@ -20,7 +20,11 @@
             </div>
           </div>
           <div class="contact-form mt-4 mt-lg-5 text-xl-end">
-            <form method="post" id="contactform" action="https://formspree.io/f/mjvnqzdo">
+            <form
+              method="post"
+              id="contactform"
+              action="https://formspree.io/f/mjvnqzdo"
+            >
               <div class="row gx-3 gy-0">
                 <div class="col-12 col-md-6">
                   <input
@@ -82,7 +86,7 @@ export default {
   methods: {
     loadGoogleMaps() {
       const loader = new Loader({
-        apiKey: "AIzaSyA-a5LDEq80DAVugTYNNaPz2PuKKGfJK-g",
+        apiKey: process.env.VUE_APP_API_MAPS_KEY,
         version: "weekly",
       });
 

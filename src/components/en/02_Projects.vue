@@ -51,7 +51,7 @@
             >
               <div class="portfolio-box">
                 <div class="portfolio-img">
-                  <a href="javascript:void(0)">
+                  <a :href="pro.url" target="_blank">
                     <img :src="require('@/' + pro.img)" alt="" />
                   </a>
                 </div>

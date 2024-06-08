@@ -88,7 +88,7 @@ export default {
   methods: {
     loadGoogleMaps() {
       const loader = new Loader({
-        apiKey: "AIzaSyA-a5LDEq80DAVugTYNNaPz2PuKKGfJK-g",
+        apiKey: process.env.VUE_APP_API_MAPS_KEY,
         version: "weekly",
       });
 

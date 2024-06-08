@@ -2,6 +2,7 @@
     {
         "name": "Administracion de Paginas Web",
         "img": "assets/projects/padministracionpaginas.png",
+        "url": "https://administracionpaginas.upea.bo",
         "tags": [
             "vuejs",
             "nodejs"
@@ -10,6 +11,7 @@
     {
         "name": "Servicio de titulados - API",
         "img": "assets/projects/ptitulados.png",
+        "url": "https://titulados.upea.bo",
         "tags": [
             "nodejs",
             "jwt",
@@ -19,6 +21,7 @@
     {
         "name": "Planificacion Presupuestaria POA",
         "img": "assets/projects/ppoa.png",
+        "url": "https://planificacion.upea.bo",
         "tags": [
             "laravel",
             "mariadb"
@@ -27,6 +30,7 @@
     {
         "name": "Portfolio web",
         "img": "assets/projects/pportfolio.png",
+        "url": "https://gcod.dev",
         "tags": [
             "vuejs",
             "nestjs"

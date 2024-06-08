@@ -18,7 +18,7 @@
       <div class="col-12 col-lg-4 order-lg-2 text-center">
         <!-- Hero Avatar -->
         <div class="hero-avatar">
-          <img src="@/assets/logo.png" alt="Logo" />
+          <img src="@/assets/gary.png" alt="Logo" />
         </div>
       </div>
       <div class="col-12 col-lg-4 order-lg-1">
@@ -84,6 +84,18 @@
                   <i class="bi bi-linkedin"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  class="button-circle button-circle-sm expand"
+                  href="https://www.canva.com/design/DAGG8f67adw/LRuD_Wt3nDhk6tffS6refw/view?utm_content=DAGG8f67adw&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                  target="_blank"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-file-person"></i>
+                  <i class="bi bi-file-person"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -102,7 +114,7 @@
               {{ experience }}+
             </h1>
           </div>
-          <div class="col-12 col-md-4 col-lg-12">
+          <div class="col-12 col-md-12 col-lg-12">
             <h6 class="sm-heading">Centro Social</h6>
             <ul class="list-inline">
               <li>
@@ -164,6 +176,30 @@
                   <i class="bi bi-instagram"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  class="button-circle button-circle-sm"
+                  href="https://www.tiktok.com/@gcoddev"
+                  target="_blank"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="button-circle button-circle-sm"
+                  href="https://www.udemy.com/user/gary-apaza-mamani/"
+                  target="_blank"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-udemy"></i>
+                  <i class="bi bi-udemy"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -180,10 +216,10 @@
 
 .cursor-type {
   display: inline-block;
-  width: 5px;
+  width: 2px;
   height: 7rem;
   background-color: white;
-  animation: blink 0.7s step-end infinite;
+  animation: blink 1s step-end infinite;
   margin-left: 5px;
 }
 
@@ -224,9 +260,9 @@ export default {
           this.index
         );
         this.index++;
-        setTimeout(this.typing, 100);
+        setTimeout(this.typing, 150);
       } else {
-        document.getElementById("cursor-type").style.display = "none";
+        // document.getElementById("cursor-type").style.display = "none";
         document
           .getElementById("a-lang")
           .setAttribute("onclick", "redirectTo('/en')");
@@ -241,6 +277,7 @@ export default {
     document.getElementById("a-index").removeAttribute("onclick");
   },
   mounted() {
+    // document.getElementById("cursor-type").style.display = "inline-block";
     document.getElementById("name-typing").innerHTML = "";
     this.index = 0;
     this.typing();

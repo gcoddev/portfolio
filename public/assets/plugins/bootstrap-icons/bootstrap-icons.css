@@ -606,6 +606,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-eyedropper::before { content: "\f342"; }
 .bi-eyeglasses::before { content: "\f343"; }
 .bi-facebook::before { content: "\f344"; }
+.bi-udemy::before { content: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMwIDU3LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwIDU3LjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CiAgLnN0MHtmaWxsOiNmZmZmZmY7fQogPC9zdHlsZT4KIDxnPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zMCwxNy4yTDE1LDguNkwwLDE3LjJWOC42TDE1LDBsMTUsOC42TDMwLDE3LjJMMzAsMTcuMnoiPgogIDwvcGF0aD4KICA8cGF0aCBkPSJNMCwyNC40aDcuOXYxOC45YzAsNC45LDMuNyw3LjMsNy4xLDcuM2MzLjUsMCw3LjEtMi40LDcuMS03LjNWMjQuNEgzMHYxOS40YzAsNC41LTEuNCw4LTQuMywxMC40CgkJYy0yLjksMi40LTYuNCwzLjUtMTAuOCwzLjVjLTQuNCwwLTcuOS0xLjItMTAuNy0zLjVDMS40LDUxLjcsMCw0OC40LDAsNDMuOVYyNC40eiIgZmlsbD0iI2ZmZmZmZiI+CiAgPC9wYXRoPgogPC9nPgo8L3N2Zz4="); width: 9px; }
 .bi-file-arrow-down-fill::before { content: "\f345"; }
 .bi-file-arrow-down::before { content: "\f346"; }
 .bi-file-arrow-up-fill::before { content: "\f347"; }

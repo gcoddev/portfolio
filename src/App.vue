@@ -16,8 +16,7 @@ export default {
     },
     async postVisita() {
       try {
-        const res = await this.axios.post("/visitas");
-        console.log(res.data);
+        await this.axios.post("/visitas");
       } catch (error) {
         console.log(error);
       }

@@ -7,6 +7,6 @@ module.exports = defineConfig({
   transpileDependencies: true,
 
   devServer: {
-    proxy: 'https://apiportfolio-production-49d4.up.railway.app/'
+    proxy: process.env.VUE_APP_URL_API
   }
 })

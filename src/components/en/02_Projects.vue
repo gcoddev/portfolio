@@ -46,11 +46,29 @@
           >
             <swiper-slide
               class="swiper-slide"
-              v-for="(pro, id_pro) of projects"
+              v-for="(pro, id_pro) of projects.slice().reverse()"
               :key="id_pro"
             >
               <div class="portfolio-box">
                 <div class="portfolio-img">
+                  <a
+                    v-if="pro.url_ins"
+                    :href="pro.url_ins ? pro.url_ins : 'javascript:;'"
+                    target="_blank"
+                    class="badge bg-light text-black position-absolute m-3"
+                    style="z-index: 9"
+                    aria-disabled="true"
+                  >
+                    {{ pro.ins }}
+                  </a>
+                  <span
+                    v-else
+                    class="badge bg-light text-black position-absolute m-3"
+                    style="z-index: 9"
+                    aria-disabled="true"
+                  >
+                    {{ pro.ins }}
+                  </span>
                   <a :href="pro.url" target="_blank">
                     <img :src="require('@/' + pro.img)" alt="" />
                   </a>

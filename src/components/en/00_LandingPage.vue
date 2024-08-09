@@ -131,6 +131,18 @@
               <li>
                 <a
                   class="button-circle button-circle-sm"
+                  href="https://api.whatsapp.com/send/?phone=59176787696&text=Hi+Gary"
+                  target="_blank"
+                  @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="button-circle button-circle-sm"
                   href="https://www.youtube.com/@gcoddev"
                   target="_blank"
                   @mouseenter="$store.commit('expandCursor')"

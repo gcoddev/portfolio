@@ -21,8 +21,8 @@
                 </div>
                 <div class="service-text">
                   <p>
-                    Experto en desarrollo web FrontEnd y BackEnd (FullStack)
-                    utilizando marcos y tecnologías modernos.
+                    Experto en desarrollo web FrontEnd y BackEnd (FullStack) Web
+                    y Movil, utilizando marcos y tecnologías modernos.
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@
           Mis cono<span class="text-gradient">cimientos</span>
         </h2>
       </div>
-      <br>
+      <br />
       <div class="swiper-navigation">
         <input
           type="search"

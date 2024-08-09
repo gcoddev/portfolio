@@ -96,7 +96,7 @@
   <main id="app" data-bs-spy="scroll" data-bs-target=".nav-box"></main>
 
   <div class="py-4 py-lg-5 text-center">
-    <p>&copy; 2024 GCodDev, <span id="copyright"></span>. v1.0</p>
+    <p>&copy; <span id="year"></span> GCodDev, <span id="copyright"></span>. v1.1</p>
   </div>
 
   <div class="scrolltotop">
@@ -109,6 +109,7 @@
   <script src="<%= BASE_URL %>assets/plugins/jquery.min.js"></script>
   <script src="<%= BASE_URL %>assets/plugins/plugins.js"></script>
   <script src="<%= BASE_URL %>assets/js/functions.js"></script>
+  <script src="<%= BASE_URL %>assets/js/particles.min.js"></script>
   <script>
     function clickMenu() {
       $('#nav-toggle').removeClass('active')
@@ -120,6 +121,13 @@
         clickMenu();
       });
     });
+
+    const currentYear = new Date().getFullYear();
+    if (currentYear == '2024') {
+      $('#year').html('2024');
+    } else {
+      $('#year').html('2024 - ' + currentYear);
+    }
   </script>
 </body>
 

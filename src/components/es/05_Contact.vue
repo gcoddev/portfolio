@@ -15,8 +15,17 @@
               <h3 class="mb-0">gary7apaza@gcod.dev</h3>
             </div>
             <div class="col-12 col-md-6">
-              <h6 class="sm-heading">Llamar:</h6>
-              <h3 class="mb-0">+591 76787696</h3>
+              <h6 class="sm-heading">Whatsapp:</h6>
+              <a
+                href="https://api.whatsapp.com/send/?phone=59176787696&text=Hola+Gary"
+                target="_blank"
+                class="button button-dot"
+              >
+                <h5 class="mb-0">
+                  <i class="bi bi-whatsapp"></i>
+                  &nbsp;+591 76787696
+                </h5>
+              </a>
             </div>
           </div>
           <div class="contact-form mt-4 mt-lg-5 text-xl-end">

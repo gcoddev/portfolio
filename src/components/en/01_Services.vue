@@ -21,8 +21,8 @@
                 </div>
                 <div class="service-text">
                   <p>
-                    Skilled in FrontEnd and BackEnd (FullStack) web development
-                    using modern frameworks and technologies.
+                    Expert in FrontEnd and BackEnd (FullStack) Web and Mobile
+                    development, using modern frameworks and technologies.
                   </p>
                 </div>
               </div>

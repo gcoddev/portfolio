@@ -1,39 +1,63 @@
 [
     {
-        "name": "Administracion de Paginas Web",
+        "name": "Web Page Administration",
+        "nombre": "Administración de Paginas Web",
         "img": "assets/projects/padministracionpaginas.png",
-        "url": "https://administracionpaginas.upea.bo",
+        "url": "https://administracionpaginas.upea.edu.bo",
         "tags": [
             "vuejs",
             "nodejs"
-        ]
+        ],
+        "ins": "UTIC - UPEA",
+        "url_ins": "https://utic.upea.bo"
     },
     {
-        "name": "Servicio de titulados - API",
+        "name": "Graduate Service - API",
+        "nombre": "Servicio de titulados - API",
         "img": "assets/projects/ptitulados.png",
-        "url": "https://titulados.upea.bo",
+        "url": "https://apiservicios.upea.bo",
         "tags": [
             "nodejs",
             "jwt",
             "mariadb"
-        ]
+        ],
+        "ins": "UTIC - UPEA",
+        "url_ins": "https://utic.upea.bo"
     },
     {
-        "name": "Planificacion Presupuestaria POA",
+        "name": "Budget Planning POA",
+        "nombre": "Planificación Presupuestaria POA",
         "img": "assets/projects/ppoa.png",
         "url": "https://planificacion.upea.bo",
         "tags": [
             "laravel",
             "mariadb"
-        ]
+        ],
+        "ins": "UTIC - UPEA",
+        "url_ins": "https://utic.upea.bo"
     },
     {
         "name": "Portfolio web",
+        "nombre": "Portafolio web",
         "img": "assets/projects/pportfolio.png",
         "url": "https://gcod.dev",
         "tags": [
             "vuejs",
             "nestjs"
-        ]
+        ],
+        "ins": "Own",
+        "url_ins": ""
+    },
+    {
+        "name": "MODO-GYM Management System",
+        "nombre": "Sistema de Administración MODO-GYM",
+        "img": "assets/projects/pmodo-gym.png",
+        "url": "https://modo-gym.gcod.dev",
+        "tags": [
+            "laravel",
+            "mariadb"
+        ],
+        "ins": "Freelance",
+        "url_ins": ""
     }
 ]

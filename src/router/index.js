@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: () => import('@/pages/null_Home.vue'),
-    children: [
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: () => import('@/pages/null_Home.vue'),
+  //   children: [
 
-    ]
-  },
+  //   ]
+  // },
   {
     path: '/es',
     name: 'es',

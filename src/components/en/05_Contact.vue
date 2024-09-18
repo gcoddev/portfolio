@@ -12,7 +12,7 @@
           <div class="row g-4 g-lg-5">
             <div class="col-12 col-md-6">
               <h6 class="sm-heading">Email:</h6>
-              <h3 class="mb-0">gary7apaza@gcod.dev</h3>
+              <h3 class="mb-0">admin@garycdev.com</h3>
             </div>
             <div class="col-12 col-md-6">
               <h6 class="sm-heading">Whatsapp:</h6>

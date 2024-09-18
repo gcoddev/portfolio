@@ -120,7 +120,7 @@
               <li>
                 <a
                   class="button-circle button-circle-sm"
-                  href="mailto:gary7apaza@gcod.dev?subject=Mensaje"
+                  href="mailto:admin@garycdev.com?subject=Mensaje"
                   @mouseenter="$store.commit('expandCursor')"
                   @mouseleave="$store.commit('expandCursorLeave')"
                 >

@@ -25,6 +25,15 @@ export default {
     // journal: journal,
     contact: contact,
   },
+  methods: {
+    async postVisita() {
+      try {
+        await this.axios.post("/visitas");
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
   created() {
     document.getElementsByTagName("html")[0].setAttribute("lang", "en");
     document.getElementById("btn-lang").innerHTML = "🇺🇸";
@@ -42,6 +51,11 @@ export default {
     // document.getElementById("a-blog").innerHTML = "Blog";
     document.getElementById("a-contact").innerHTML = "Contact";
     document.getElementById("copyright").innerHTML = "All Rights Reserved";
+
+    document.getElementsByTagName("body")[0].classList.remove("loaded");
+    document.getElementById("a-index").removeAttribute("onclick")
+
+    this.postVisita();
   },
 };
 </script>

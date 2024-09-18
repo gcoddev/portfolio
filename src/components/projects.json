@@ -40,7 +40,7 @@
         "name": "Portfolio web",
         "nombre": "Portafolio web",
         "img": "assets/projects/pportfolio.png",
-        "url": "https://gcod.dev",
+        "url": "https://garycdev.com",
         "tags": [
             "vuejs",
             "nestjs"
@@ -52,7 +52,7 @@
         "name": "MODO-GYM Management System",
         "nombre": "Sistema de Administración MODO-GYM",
         "img": "assets/projects/pmodo-gym.png",
-        "url": "https://modo-gym.gcod.dev",
+        "url": "https://modo-gym.garycdev.com",
         "tags": [
             "laravel",
             "mariadb"

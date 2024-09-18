@@ -13,14 +13,7 @@ export default {
       } catch (error) {
         console.log(error);
       }
-    },
-    async postVisita() {
-      try {
-        await this.axios.post("/visitas");
-      } catch (error) {
-        console.log(error);
-      }
-    },
+    }
   },
   created() {
     if (document.getElementsByTagName("body")[0] === "true") {
@@ -31,7 +24,39 @@ export default {
         );
     }
     this.getStatus();
-    this.postVisita();
+    this.axios
+      .get(
+        "https://api.ipgeolocation.io/ipgeo?apiKey=" +
+        process.env.VUE_APP_API_GEO_KEY
+      )
+      .then((response) => {
+        // console.log(response);
+
+        const region = response.data.country_code2;
+        if (
+          region === "MX" ||
+          region === "AR" ||
+          region === "CO" ||
+          region === "CL" ||
+          region === "PE" ||
+          region === "VE" ||
+          region === "UY" ||
+          region === "PY" ||
+          region === "BO" ||
+          region === "EC"
+        ) {
+          document.getElementsByTagName("html")[0].setAttribute("lang", "es");
+          this.$router.push("/es");
+        } else {
+          document.getElementsByTagName("html")[0].setAttribute("lang", "en");
+          this.$router.push("/en");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching geolocation data:", error);
+        document.getElementsByTagName("html")[0].setAttribute("lang", "en");
+        this.$router.push("/en");
+      });
   },
 };
 </script>

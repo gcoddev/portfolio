@@ -129,6 +129,14 @@
       $('#year').html('2024 - ' + currentYear);
     }
   </script>
+
+  <script>
+    (function (d, t, u, s, c, f) {
+      f = function (m) { m = new Date(); return m.getFullYear() + '' + (m.getMonth() + 1) + '' + m.getDate() + 'T' + m.getHours() + '' + m.getMinutes() + '' + m.getSeconds() };
+      u = 'https://widgets-static.embluemail.com/accounts/243966716C9B73A560/scripts/sw_24396.js?ts=' + f(); s = d.createElement(t);
+      s.async = 1; s.src = u; c = d.getElementsByTagName(t)[0]; c.parentNode.insertBefore(s, c);
+    })(document, 'script');
+  </script>
 </body>
 
 </html>

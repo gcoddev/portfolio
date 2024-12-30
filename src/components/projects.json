@@ -5,8 +5,8 @@
         "img": "assets/projects/padministracionpaginas.png",
         "url": "https://administracionpaginas.upea.edu.bo",
         "tags": [
-            "vuejs",
-            "nodejs"
+            "VueJS",
+            "NodeJS"
         ],
         "ins": "UTIC - UPEA",
         "url_ins": "https://utic.upea.bo"
@@ -17,9 +17,9 @@
         "img": "assets/projects/ptitulados.png",
         "url": "https://apiservicios.upea.bo",
         "tags": [
-            "nodejs",
+            "NodeJS",
             "jwt",
-            "mariadb"
+            "MariaDB"
         ],
         "ins": "UTIC - UPEA",
         "url_ins": "https://utic.upea.bo"
@@ -31,7 +31,7 @@
         "url": "https://planificacion.upea.bo",
         "tags": [
             "laravel",
-            "mariadb"
+            "MariaDB"
         ],
         "ins": "UTIC - UPEA",
         "url_ins": "https://utic.upea.bo"
@@ -42,8 +42,8 @@
         "img": "assets/projects/pportfolio.png",
         "url": "https://garycdev.com",
         "tags": [
-            "vuejs",
-            "nestjs"
+            "VueJS",
+            "NestJS"
         ],
         "ins": "Own",
         "url_ins": ""
@@ -55,9 +55,37 @@
         "url": "https://modo-gym.garycdev.com",
         "tags": [
             "laravel",
-            "mariadb"
+            "MariaDB"
         ],
         "ins": "Freelance",
         "url_ins": ""
+    },
+    {
+        "name": "Pharmacy Management System",
+        "nombre": "Sistema de Administración de Farmacia",
+        "img": "assets/projects/pbuen-doctor.png",
+        "url": "https://el-buen-doctor.garycdev.com",
+        "tags": [
+            "laravel",
+            "MariaDB"
+        ],
+        "ins": "Freelance",
+        "url_ins": ""
+    },
+    {
+        "name": "University payment platform UPEA",
+        "nombre": "Plataforma Universitaria de Pagos UPEA",
+        "img": "assets/projects/ppup.png",
+        "url": "https://pasarela.upea.bo",
+        "tags": [
+            "NestJS",
+            "NuxtJS",
+            "GoogleAuth",
+            "jwt",
+            "MariaDB",
+            "Swagger"
+        ],
+        "ins": "UTIC - UPEA",
+        "url_ins": "https://utic.upea.bo"
     }
 ]

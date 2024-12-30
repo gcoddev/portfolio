@@ -10,7 +10,8 @@
         </div>
         <div class="col-12 col-xl-8">
           <div class="row g-4">
-            <div class="col-12">
+            <div class="col-12" @mouseenter="$store.commit('expandCursor')"
+              @mouseleave="$store.commit('expandCursorLeave')">
               <div class="service-box">
                 <div class="service-order">
                   <h3>01/</h3>
@@ -27,7 +28,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12" @mouseenter="$store.commit('expandCursor')"
+              @mouseleave="$store.commit('expandCursorLeave')">
               <div class="service-box">
                 <div class="service-order">
                   <h3>02/</h3>
@@ -44,7 +46,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12" @mouseenter="$store.commit('expandCursor')"
+              @mouseleave="$store.commit('expandCursorLeave')">
               <div class="service-box">
                 <div class="service-order">
                   <h3>03/</h3>
@@ -76,48 +79,27 @@
       </div>
       <br />
       <div class="swiper-navigation">
-        <input
-          type="search"
-          id="search"
-          class="input-search"
-          placeholder="Search course"
-          v-model="search"
-          @keyup="filterTechnologies()"
-        />
-        <div
-          class="swiper-xp-prev button-circle cursor-link"
-          @mouseenter="$store.commit('expandCursor')"
-          @mouseleave="$store.commit('expandCursorLeave')"
-        >
+        <input type="search" id="search" class="input-search" placeholder="Search course" v-model="search"
+          @keyup="filterTechnologies()" />
+        <div class="swiper-xp-prev button-circle cursor-link" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')">
           <i class="bi bi-arrow-left"></i>
           <i class="bi bi-arrow-left"></i>
         </div>
-        <div
-          class="swiper-xp-next button-circle cursor-link"
-          @mouseenter="$store.commit('expandCursor')"
-          @mouseleave="$store.commit('expandCursorLeave')"
-        >
+        <div class="swiper-xp-next button-circle cursor-link" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')">
           <i class="bi bi-arrow-right"></i>
           <i class="bi bi-arrow-right"></i>
         </div>
       </div>
       <div class="swiper clients-slider">
-        <Swiper
-          class="swiper-wrapper"
-          :slides-per-view="slidesPerView"
-          :breakpoints="breakpoints"
-          :modules="modules"
-          :navigation="{ prevEl: '.swiper-xp-prev', nextEl: '.swiper-xp-next' }"
-          :pagination="{
+        <Swiper class="swiper-wrapper" :slides-per-view="slidesPerView" :breakpoints="breakpoints" :modules="modules"
+          :navigation="{ prevEl: '.swiper-xp-prev', nextEl: '.swiper-xp-next' }" :pagination="{
             el: '.xp-swiper-pagination',
             clickable: true,
-          }"
-        >
-          <swiper-slide
-            class="swiper-slide"
-            v-for="(tech, id_tech) of technologies"
-            :key="id_tech"
-          >
+          }">
+          <swiper-slide class="swiper-slide" v-for="(tech, id_tech) of technologies" :key="id_tech"
+            @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
             <div class="client-box" :title="tech.name">
               <a href="javascript:void(0)">
                 <img :src="require('@/' + tech.img)" alt="" class="img-tech" />
@@ -125,7 +107,8 @@
             </div>
           </swiper-slide>
         </Swiper>
-        <div class="xp-swiper-pagination swiper-pagination"></div>
+        <div class="xp-swiper-pagination swiper-pagination" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')"></div>
       </div>
     </div>
   </div>
@@ -137,6 +120,7 @@
   margin-bottom: 20px;
   position: relative;
 }
+
 .swiper-navigation .input-search {
   width: 25%;
   margin: auto 10px;

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Degree of Systems Engineering",
+        "nombre": "Licenciatura en ingeniería de sistemas",
+        "description": "",
+        "descripcion": "Estudios en ingeniería de sistemas.",
+        "period": "2020 - current",
+        "periodo": "2020 - actual",
+        "inst": [
+            {
+                "url": "https://www.upea.bo",
+                "icon": "assets/training/upea.png",
+                "name": "Public University of El Alto",
+                "nombre": "Universidad Pública de El Alto"
+            },
+            {
+                "url": "https://sistemas.upea.bo",
+                "icon": "assets/training/sistemas.png",
+                "name": "Systems Engineering",
+                "nombre": "Ingeniería de sistemas"
+            }
+        ]
+    },
+    {
+        "name": "FullStack web developer",
+        "nombre": "Desarrollador web FullStack",
+        "period": "2020 - current",
+        "periodo": "2020 - actual",
+        "inst": [
+            {
+                "url": "https://platzi.com",
+                "icon": "assets/training/platzi.png",
+                "name": "Platzi",
+                "nombre": "Platzi"
+            },
+            {
+                "url": "https://udemy.com",
+                "icon": "assets/training/udemy.png",
+                "name": "Udemy",
+                "nombre": "Udemy"
+            }
+        ]
+    },
+    {
+        "name": "Computer Systems Technician",
+        "nombre": "Técnico en sistemas informáticos",
+        "period": "2017 - 2019",
+        "periodo": "2017 - 2019",
+        "inst": [
+            {
+                "url": "",
+                "icon": "assets/training/jlsg.png",
+                "name": "Humanistic Technician Jose Luis Suarez Guzman",
+                "nombre": "Técnico Humanístico Jose Luís Suárez Guzman"
+            }
+        ]
+    }
+]

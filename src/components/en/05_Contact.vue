@@ -12,15 +12,19 @@
           <div class="row g-4 g-lg-5">
             <div class="col-12 col-md-6">
               <h6 class="sm-heading">Email:</h6>
-              <h3 class="mb-0">admin@garycdev.com</h3>
+              <a href="mailto:contact@garycdev.com?subject=Mensaje" target="_blank" class="button button-dot"
+                @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
+                <h5 class="mb-0 text-lowercase">
+                  <i class="bi bi-envelope"></i>
+                  &nbsp;contact@garycdev.com
+                </h5>
+              </a>
             </div>
             <div class="col-12 col-md-6">
               <h6 class="sm-heading">Whatsapp:</h6>
-              <a
-                href="https://api.whatsapp.com/send/?phone=59176787696&text=Hi+Gary"
-                target="_blank"
-                class="button button-dot"
-              >
+              <a href="https://api.whatsapp.com/send/?phone=59176787696&text=Hi+Gary" target="_blank"
+                class="button button-dot" @mouseenter="$store.commit('expandCursor')"
+                @mouseleave="$store.commit('expandCursorLeave')">
                 <h5 class="mb-0">
                   <i class="bi bi-whatsapp"></i>
                   &nbsp;+591 76787696
@@ -29,45 +33,22 @@
             </div>
           </div>
           <div class="contact-form mt-4 mt-lg-5 text-xl-end">
-            <form
-              method="post"
-              id="contactform"
-              action="https://formspree.io/f/mjvnqzdo"
-            >
+            <form method="post" id="contactform" @submit.prevent="submitMail">
               <div class="row gx-3 gy-0">
-                <div class="col-12 col-md-6">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                  />
+                <div class="col-12 col-md-5">
+                  <input type="text" id="name" name="name" v-model="name" placeholder="Name" required />
                 </div>
-                <div class="col-12 col-md-6">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="E-Mail"
-                    required
-                  />
+                <!-- <div class="col-12 col-md-6">
+                  <input type="email" id="email" name="email" placeholder="E-Mail" required />
+                </div> -->
+                <div class="col-12 col-md-7">
+                  <input type="text" id="subject" name="subject" v-model="subject" placeholder="Subjetc" required />
                 </div>
               </div>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-              ></textarea>
-              <button class="button button-dot" type="submit">
-                <span data-text="Send Message">Send Message</span>
+              <textarea name="message" id="message" v-model="message" placeholder="Message" required></textarea>
+              <button class="button button-dot" type="submit" @mouseenter="$store.commit('expandCursor')"
+                @mouseleave="$store.commit('expandCursorLeave')">
+                <span data-text="Send message">Send message</span>
               </button>
             </form>
             <div class="submit-result">
@@ -90,6 +71,9 @@ export default {
   data() {
     return {
       map: null,
+      subject: '',
+      name: '',
+      message: ''
     };
   },
   methods: {
@@ -114,6 +98,16 @@ export default {
         zoom: 16,
       });
     },
+    submitMail() {
+      const subject = this.subject
+      const name = this.name
+      const message = this.message
+
+      const correo = `mailto:contact@garycdev.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('De: ' + name + '\n\n' + message)}`;
+      // console.log(correo);
+
+      window.location.href = correo;
+    }
   },
   mounted() {
     this.loadGoogleMaps();

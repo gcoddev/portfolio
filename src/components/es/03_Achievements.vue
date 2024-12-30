@@ -10,61 +10,19 @@
         </div>
         <div class="col-12 col-xl-8">
           <div class="row g-4">
-            <div class="col-12 col-md-6">
-              <div class="fancy-box">
-                <h4>Licenciatura en ingeniería de sistemas</h4>
-                <h6 class="sm-heading text-white-04 mb-2">2020 - actual</h6>
-                <p>Estudios en ingeniería de sistemas.</p>
+            <div class="col-12 col-md-6" v-for="(train, id) of trains" :key="id">
+              <div class="fancy-box" @mouseenter="$store.commit('expandCursor')"
+                @mouseleave="$store.commit('expandCursorLeave')">
+                <h4>{{ train.nombre }}</h4>
+                <h6 class="sm-heading text-white-04 mb-2">
+                  {{ train.periodo }}
+                </h6>
+                <p>{{ train.descripcion }}</p>
                 <br />
                 <div>
-                  <a href="https://www.upea.bo" target="_blank">
-                    <img
-                      src="@/assets/icons/upea.png"
-                      style="width: 50px"
-                      alt=""
-                    />
-                  </a>
-                  <a href="https://sistemas.upea.edu.bo" target="_blank">
-                    <img
-                      src="@/assets/icons/sistemas.png"
-                      style="width: 40px"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="fancy-box">
-                <h4>Tecnico en sistemas informaticos</h4>
-                <h6 class="sm-heading text-white-04 mb-2">2017 - 2019</h6>
-                <p>Conocimientos intermedios en sistemas informáticos.</p>
-                <br />
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="fancy-box">
-                <h4>FullStack web developer</h4>
-                <h6 class="sm-heading text-white-04 mb-2">2020 - actual</h6>
-                <p>
-                  Conocimientos en desarrollo de software FrontEnd y BackEnd
-                  (FullStack).
-                </p>
-                <br />
-                <div>
-                  <a href="https://plazi.com" target="_blank">
-                    <img
-                      src="@/assets/icons/platzi.png"
-                      style="width: 40px"
-                      alt=""
-                    />
-                  </a>
-                  <a href="https://udemy.com" target="_blank">
-                    <img
-                      src="@/assets/icons/udemy.png"
-                      style="width: 55px"
-                      alt=""
-                    />
+                  <a v-for="(ins, id_ins) of train.inst" :key="id_ins" :href="ins.url ? ins.url : 'javascript:void(0);'"
+                    :target="ins.url ? '_blank' : ''" :title="ins.nombre">
+                    <img :src="require('@/' + ins.icon)" style="width: 50px;margin-right:10px" alt="" />
                   </a>
                 </div>
               </div>
@@ -80,42 +38,94 @@
       <h1 class="display-5 fw-medium mb-0">
         Exper<span class="text-gradient">iencia</span>
       </h1>
+      <div class="mt-4">
+        <div class="swiper-exp-prev button-circle cursor-link" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')">
+          <i class="bi bi-arrow-left"></i>
+          <i class="bi bi-arrow-left"></i>
+        </div>
+        <div class="swiper-exp-next button-circle cursor-link" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')">
+          <i class="bi bi-arrow-right"></i>
+          <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
       <br />
       <div class="swiper testimonial-slider">
-        <Swiper class="swiper-wrapper" :slides-per-view="1" :space-between="50">
-          <swiper-slide class="swiper-slide">
+        <Swiper class="swiper-wrapper" :slides-per-view="slidesPerView" :breakpoints="breakpoints" :modules="modules"
+          :navigation="{ prevEl: '.swiper-exp-prev', nextEl: '.swiper-exp-next' }" :pagination="{
+            el: '.xp-swiper-pagination3',
+            clickable: true,
+          }">
+          <swiper-slide class="swiper-slide" v-for="(ex, id_ex) of exps" :key="id_ex">
             <div class="testimonial-box">
               <div class="testimonial-avatar">
-                <img src="@/assets/icons/utic.png" alt="U-TIC" />
+                <a :href="ex.url" target="_blank" @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')">
+                  <img :src="require('@/' + ex.img)" :alt="ex.institucion" />
+                </a>
               </div>
               <div class="testimonial-content">
                 <div class="mb-3">
-                  <a href="https://utic.upea.bo" target="_blank">
-                    <h3>UTIC</h3>
+                  <a :href="ex.url" target="_blank" @mouseenter="$store.commit('expandCursor')"
+                    @mouseleave="$store.commit('expandCursorLeave')">
+                    <h3>{{ ex.nombre }}</h3>
                   </a>
-                  <span class="sm-heading text-white">UPEA</span>
+                  <span class="sm-heading text-white">
+                    <a :href="ex.ins_url" @mouseenter="$store.commit('expandCursor')"
+                      @mouseleave="$store.commit('expandCursorLeave')">
+                      {{ ex.institucion }}
+                    </a>
+                  </span>
                 </div>
                 <p class="fs-4 fw-normal fst-italic line-height-140">
-                  Técnico en desarrollo de software web y microservicios.
+                  {{ ex.descripcion }}
                 </p>
               </div>
             </div>
           </swiper-slide>
         </Swiper>
+        <div class="xp-swiper-pagination3 swiper-pagination" @mouseenter="$store.commit('expandCursor')"
+          @mouseleave="$store.commit('expandCursorLeave')"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
+const trains = require("../training.json");
+const exps = require("../exps.json");
 
 export default {
   name: "achievementsView",
+  data() {
+    return {
+      trains,
+      exps,
+      slidesPerView: 1,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 25
+        },
+        1440: {
+          slidesPerView: 2,
+          spaceBetween: 25
+        }
+      },
+    }
+  },
   components: {
     Swiper,
     SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Navigation, Pagination],
+    };
   },
 };
 </script>

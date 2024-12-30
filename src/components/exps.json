@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Information and Communications Technology Unit",
+        "nombre": "Unidad de Tecnologías de Información y Comunicaciones",
+        "institution": "UPEA",
+        "institucion": "UPEA",
+        "ins_url": "https://www.upea.bo",
+        "img": "assets/training/utic.png",
+        "url": "https://utic.upea.bo",
+        "description": "Technician in web software development and microservices.",
+        "descripcion": "Técnico en desarrollo de software web y microservicios."
+    }
+]

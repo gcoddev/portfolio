@@ -3,10 +3,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-12">
-          <h1
-            class="hero-heading display-1 fw-bold mb-0 stroke-tex"
-            id="name-typing"
-          ></h1>
+          <h1 class="hero-heading display-1 fw-bold mb-0 stroke-tex" id="name-typing"></h1>
           <span class="cursor-type" id="cursor-type"></span>
         </div>
       </div>
@@ -26,9 +23,8 @@
           <div class="col-12 col-md-4 col-lg-12">
             <h6 class="sm-heading">Biography</h6>
             <p>
-              Self-taught student, teacher instructor and freelance developer in
-              my free time. I am a responsible and committed person, I like to
-              learn, especially share my knowledge.
+              Self-taught student, teacher instructor and developer.
+              I am a responsible, I like to learn, especially share my knowledge.
             </p>
           </div>
           <div class="col-6 col-md-4 col-lg-12">
@@ -49,18 +45,13 @@
             <h6 class="sm-heading">Portfolio</h6>
             <ul class="list-inline">
               <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://github.com/gcoddev"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm" href="https://github.com/gcoddev" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-github"></i>
                   <i class="bi bi-github"></i>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="button-circle button-circle-sm"
                   href="https://gitlab.com/gcoddev"
@@ -71,27 +62,20 @@
                   <i class="bi bi-gitlab"></i>
                   <i class="bi bi-gitlab"></i>
                 </a>
-              </li>
+              </li> -->
               <li>
-                <a
-                  class="button-circle button-circle-sm expand"
-                  href="https://www.linkedin.com/in/gcoddev"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm expand" href="https://www.linkedin.com/in/gcoddev"
+                  target="_blank" @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-linkedin"></i>
                   <i class="bi bi-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a
-                  class="button-circle button-circle-sm expand"
+                <a class="button-circle button-circle-sm expand"
                   href="https://www.canva.com/design/DAGHgZZgmY8/uwcGQxmt32g88x39Hosp-g/view?utm_content=DAGHgZZgmY8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                  target="_blank" @mouseenter="$store.commit('expandCursor')"
+                  @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-file-person"></i>
                   <i class="bi bi-file-person"></i>
                 </a>
@@ -117,18 +101,18 @@
           <div class="col-12 col-md-12 col-lg-12">
             <h6 class="sm-heading">Social Hub</h6>
             <ul class="list-inline">
-              <li>
+              <!-- <li>
                 <a
                   class="button-circle button-circle-sm"
-                  href="mailto:admin@garycdev.com?subject=Mensaje"
+                  href="mailto:contact@garycdev.com?subject=Mensaje"
                   @mouseenter="$store.commit('expandCursor')"
                   @mouseleave="$store.commit('expandCursorLeave')"
                 >
                   <i class="bi bi-envelope-fill"></i>
                   <i class="bi bi-envelope-fill"></i>
                 </a>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a
                   class="button-circle button-circle-sm"
                   href="https://api.whatsapp.com/send/?phone=59176787696&text=Hi+Gary"
@@ -139,68 +123,43 @@
                   <i class="bi bi-whatsapp"></i>
                   <i class="bi bi-whatsapp"></i>
                 </a>
-              </li>
+              </li> -->
               <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://www.youtube.com/@gcoddev"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm" href="https://www.youtube.com/@gcoddev" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-youtube"></i>
                   <i class="bi bi-youtube"></i>
                 </a>
               </li>
               <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://www.facebook.com/gcoddev/"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm" href="https://www.facebook.com/gcoddev/" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-facebook"></i>
                   <i class="bi bi-facebook"></i>
                 </a>
               </li>
               <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://x.com/gcoddev"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
-                  <i class="bi bi-twitter-x"></i>
-                  <i class="bi bi-twitter-x"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://www.instagram.com/gcoddev7"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm" href="https://www.instagram.com/garycdev7" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-instagram"></i>
                   <i class="bi bi-instagram"></i>
                 </a>
               </li>
               <li>
-                <a
-                  class="button-circle button-circle-sm"
-                  href="https://www.tiktok.com/@gcoddev"
-                  target="_blank"
-                  @mouseenter="$store.commit('expandCursor')"
-                  @mouseleave="$store.commit('expandCursorLeave')"
-                >
+                <a class="button-circle button-circle-sm" href="https://x.com/gcoddev" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="button-circle button-circle-sm" href="https://www.tiktok.com/@garycdev" target="_blank"
+                  @mouseenter="$store.commit('expandCursor')" @mouseleave="$store.commit('expandCursorLeave')">
                   <i class="bi bi-tiktok"></i>
                   <i class="bi bi-tiktok"></i>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="button-circle button-circle-sm"
                   href="https://www.udemy.com/user/gary-apaza-mamani/"
@@ -211,7 +170,7 @@
                   <i class="bi bi-udemy"></i>
                   <i class="bi bi-udemy"></i>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -238,10 +197,12 @@
 }
 
 @keyframes blink {
+
   from,
   to {
     background-color: transparent;
   }
+
   50% {
     background-color: white;
   }
@@ -262,9 +223,18 @@ export default {
   },
   computed: {
     experience() {
-      let actual = new Date();
-      let year = actual.getFullYear();
-      return year - 2022;
+      const startDate = new Date(2022, 0);
+      const actualDate = new Date();
+
+      let years = actualDate.getFullYear() - startDate.getFullYear();
+      const months = actualDate.getMonth() - startDate.getMonth();
+
+      // Si el mes actual es anterior al mes de inicio, resta 1 año
+      if (months < 0 || (months === 0 && actualDate.getDate() < startDate.getDate())) {
+        years--;
+      }
+
+      return years;
     },
   },
   methods: {

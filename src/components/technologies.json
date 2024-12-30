@@ -1,5 +1,18 @@
 [
     {
+        "name": "Nuxt.js",
+        "img": "assets/banner/bnuxt.png",
+        "tags": [
+            "javascript",
+            "nodejs",
+            "node",
+            "nuxtjs",
+            "vuejs",
+            "vue",
+            "js"
+        ]
+    },
+    {
         "name": "Vue.js",
         "img": "assets/banner/bvue.png",
         "tags": [
@@ -187,6 +200,14 @@
         "tags": [
             "mysql",
             "mariadb"
+        ]
+    },
+    {
+        "name": "PostgreSQL",
+        "img": "assets/banner/bpostgresql.png",
+        "tags": [
+            "postgreslql",
+            "db"
         ]
     },
     {

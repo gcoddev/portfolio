@@ -9,5 +9,16 @@
         "url": "https://utic.upea.bo",
         "description": "Technician in web software development and microservices.",
         "descripcion": "Técnico en desarrollo de software web y microservicios."
+    },
+    {
+        "name": "Freelance on Fiverr",
+        "nombre": "Freelance en Fiverr",
+        "institution": "Fiverr",
+        "institucion": "Fiverr",
+        "ins_url": "https://fiverr.com",
+        "img": "assets/training/fiverr.png",
+        "url": "https://es.fiverr.com",
+        "description": "Freelance on software development, microservices and mobile applications",
+        "descripcion": "Freelance en desarrollo de software web, microservicios y aplicaciones móviles."
     }
 ]
